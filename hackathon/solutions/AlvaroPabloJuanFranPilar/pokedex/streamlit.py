@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import sys
 
-script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'script'))
+script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 sys.path.append(script_path)
 from similarity_template import PokemonSimilarity
 from PIL import Image

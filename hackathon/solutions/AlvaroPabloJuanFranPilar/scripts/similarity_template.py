@@ -9,6 +9,7 @@ import requests
 # from pathlib import Path
 import timm
 # import BytesIOfrom io import BytesIO
+import os 
 from io import BytesIO
 import numpy as np
 from PIL import Image as PILImage
@@ -64,7 +65,9 @@ class PokemonSimilarity:
         Returns:
             list: List of dictionaries containing Pokemon embeddings and labels
         """
-        with open('../solutions/embeddings.pickle', 'rb') as handle:
+        # imprimimos ruta de actua 
+        # print(f"Current work directory: {os.getcwd()}")
+        with open('../embeddings.pickle', 'rb') as handle:
             return pickle.load(handle)
         # return  load_embeddings_from_pickle('../solutembeddings.pickle')
 

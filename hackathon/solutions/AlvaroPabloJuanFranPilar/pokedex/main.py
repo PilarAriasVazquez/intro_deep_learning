@@ -4,8 +4,12 @@ from pydantic import BaseModel
 import os 
 import sys
 
-script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'script'))
+script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scripts'))
 sys.path.append(script_path)
+# vamos a la carpeta script para importar similarity_template
+# from PIL import Image
+# from io import BytesIO
+print("Script path:", script_path)
 from similarity_template import PokemonSimilarity
 import requests
 
